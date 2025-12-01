@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Capstone project</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="brand">
+        <h1 class="logo">Foodie</h1>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#restaurants">Restaurants</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#app">App</a></li>
+      </ul>
+
+      <div class="nav-btns">
+        <button class="btn login" >Login</button>
+        <button class="btn signup">Sign Up</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Fresh flavors, delivered fast</h2>
+        <p>Grab your favorite meals from local spots. Hot, fast, and tasty — right at your door.</p>
+        <button class="btn cta">Order Now</button>
+      </div>
+
+      <div class="hero-right">
+        <img src="images/hero.jpeg" alt="Bowls of food on a table">
+      </div>
+    </section>
+
+    <section class="search-box" aria-label="Search restaurants">
+      <label for="loc" class="visually-hidden">Location</label>
+      <input id="loc" type="text" placeholder="Enter your location" />
+
+      <label for="cat" class="visually-hidden">Category</label>
+      <select id="cat">
+        <option>All Categories</option>
+        <option>Pizza</option>
+        <option>Burgers</option>
+        <option>Sushi</option>
+        <option>Indian</option>
+      </select>
+
+      <button class="btn search">Search</button>
+    </section>
+
+    <section id="categories" class="category-section">
+      <h3>Browse by Category</h3>
+
+      <div class="category-grid">
+       <article class="category-card">🍕<span>Pizza</span></article>
+       <article class="category-card">🍔<span>Burgers</span></article>
+      <article class="category-card">🍣<span>Sushi</span></article>
+      <article class="category-card">🥗<span>Salads</span></article>
+      <article class="category-card">🍜<span>Asian</span></article>
+      <article class="category-card">🧁<span>Desserts</span></article>
+
+      </div>
+    </section>
+
+    <section id="restaurants" class="restaurant-section">
+      <h3>Featured Restaurants</h3>
+
+      <div class="restaurant-grid">
+        <article class="restaurant-card">
+          <img src="images/res1.jpeg" alt="Interior of restaurant">
+          <h4>Urban Grill</h4>
+          <p>Steak · Grilled</p>
+          <div class="rating">⭐ 4.7</div>
+        </article>
+
+        <article class="restaurant-card">
+          <img src="images/res2.jpeg" alt="Burger closeup">
+          <h4>Stacked Buns</h4>
+          <p>Burgers · Fast Food</p>
+          <div class="rating">⭐ 4.6</div>
+        </article>
+
+        <article class="restaurant-card">
+          <img src="images/res3.jpeg" alt="Sushi spread">
+          <h4>Miso Magic</h4>
+          <p>Japanese · Sushi</p>
+          <div class="rating">⭐ 4.8</div>
+        </article>
+
+        <article class="restaurant-card">
+          <img src="images/res4.jpeg" alt="Healthy bowl">
+          <h4>Leaf & Bowl</h4>
+          <p>Healthy · Vegan</p>
+          <div class="rating">⭐ 4.5</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="offers" class="offer-section">
+      <h3>Promo Offers</h3>
+
+      <div class="offer-grid">
+            <div class="offer-card">
+             <img src="images/offer1.png" alt="Discount Offer">
+             Get 25% OFF on your first order!
+            </div>
+
+           <div class="offer-card">
+              <img src="images/offer2.png" alt="Free Delivery">
+              Free delivery above ₹300
+            </div>
+
+           <div class="offer-card">
+              <img src="images/offer3.png" alt="Burger Offer">
+              Buy 1 Get 1 Free on Burgers every Friday
+            </div>
+       </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <h3>What Our Customers Say</h3>
+
+      <div class="testi-grid">
+        <article class="testi-card">
+          <img src="images/user1.jpeg" alt="Aarav profile">
+          <p>"Foodie saved my college life — meals arrive hot and on time!"</p>
+          <strong>Aarav K.</strong>
+        </article>
+
+        <article class="testi-card">
+          <img src="images/user2.jpeg" alt="Meera profile">
+          <p>"Great offers and fast delivery. I order every weekend."</p>
+          <strong>Meera R.</strong>
+        </article>
+
+        <article class="testi-card">
+          <img src="images/user3.jpeg" alt="Rohan profile">
+          <p>"Simple UI, quick checkout. 10/10 would recommend."</p>
+          <strong>Rohan D.</strong>
+        </article>
+      </div>
+    </section>
+
+    <section id="app" class="app-section">
+      <h3>Get the Foodie App</h3>
+      <p>Download for exclusive deals and faster checkout.</p>
+
+      <div class="store-icons">
+        <img src="images/playstore.svg" alt="Google Play Store" />
+        <img src="images/appstore.png" alt="Apple App Store" />
+      </div>
+    </section>
+
+  </main>
+
+ <footer>
+  <div class="footer-top">
+    <div class="footer-col">
+      <h4>Cities Served</h4>
+      <ul class="city-list">
+        <li>Delhi</li>
+        <li>Mumbai</li>
+        <li>Goa</li>
+        <li>Bangalore</li>
+        <li>Chandigarh</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p class="contact-line">Email: support@foodie.com</p>
+      <p class="contact-line">Phone: XXXXXXXXXXX</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-row">
+        <span class="social">🌐</span>
+        <span class="social">🐦</span>
+        <span class="social">📸</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Foodie. All rights reserved.</p>
+  </div>
+ </footer>
+
+
+
+</body>
+</html>
